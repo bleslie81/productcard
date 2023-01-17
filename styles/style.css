@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  max-height: -webkit-fill-available;
+}
+
+body {
+  background: rgb(243, 234, 227);
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 460px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfume {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgb(158, 160, 167);
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+
+.headtitle {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: rgb(158, 160, 167);
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  padding: 15px 20px 15px 1px;
+  justify-content: space-between;
+}
+
+.budget {
+  color: rgb(60, 131, 106);
+  font-family: "Fraunces", serif;
+  font-size: x-large;
+}
+
+.mainprice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: rgb(26, 64, 49);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+}
+
+button > span > i {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 380px;
+    flex-direction: column;
+    width: 80%;
+  }
+  .img {
+    width: 100%;
+  }
+  img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    height: 100%;
+    min-width: -webkit-fill-available;
+    max-height: 280px;
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content {
+    background: white;
+  }
+  .price {
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=style.css.map */
